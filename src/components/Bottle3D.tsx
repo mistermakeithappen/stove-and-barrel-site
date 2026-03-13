@@ -32,6 +32,9 @@ function Fallback() {
   return null;
 }
 
+// Point useGLTF at the local Draco decoder for compressed models
+useGLTF.setDecoderPath("/draco/");
+
 export default function Bottle3D({
   mousePos,
 }: {
